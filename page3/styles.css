@@ -53,9 +53,9 @@ a {
 }
 
 .site-nav {
-     background-color: rgba(18, 17, 16, 0.96); 
-     border-bottom: 1px solid var(--line);
-      padding: 0.9rem 0; 
+    background-color: rgba(18, 17, 16, 0.96); 
+    border-bottom: 1px solid var(--line);
+    padding: 0.9rem 0; 
 }
 .brand { 
     display: flex; 
