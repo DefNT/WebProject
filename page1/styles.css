@@ -1,4 +1,3 @@
-/* ===== Mythos theme (shared) ===== */
 :root {
   --bg: #121110;
   --panel: #1a1917;
@@ -47,7 +46,6 @@ a {
   background-color: var(--gold); 
 }
 
-/* Navigation */
 .site-nav { 
   background-color: rgba(18, 17, 16, 0.96); 
   border-bottom: 1px solid var(--line); 
@@ -104,7 +102,6 @@ a {
   background-color: var(--gold); 
 }
 
-/* Buttons */
 .btn-gold, .btn-ghost { 
   font-size: 0.72rem; 
   letter-spacing: 0.15em; 
@@ -132,7 +129,6 @@ a {
    color: var(--gold); 
 }
 
-/* Creature card (used on Home and Bestiary) */
 .entry-card { 
   position: relative; 
   background-color: var(--panel); 
@@ -176,7 +172,6 @@ a {
   margin: 0;
 }
 
-/* Footer (Flexbox) */
 .site-footer {
   background-color: #0d0c0b; 
   border-top: 1px solid var(--line); 
@@ -213,14 +208,13 @@ a {
   color: #4f4b44; 
 }
 
-/* ===== Home ===== */
 .hero { 
   position: relative; 
   display: flex; 
   align-items: center; 
   min-height: 78vh; 
   overflow: hidden; 
-}   /* relative = parent for absolute items */
+}
 .hero-bg { 
   position: absolute; 
   top: 0; 
@@ -264,7 +258,6 @@ a {
   gap: 1.5rem; 
 }   
 
-/* CSS Grid */
 .featured-grid > :nth-child(2) {
   margin-top: 1rem; 
 }
@@ -276,7 +269,6 @@ a {
   border-left: 1px solid var(--line); 
 }   
 
-/* CSS Grid */
 .tradition-cell { 
   display: block; 
   padding: 1.25rem; 
@@ -314,7 +306,6 @@ a {
   }
 }
 
-/* Tablet */
 @media (
   max-width: 992px) {
   .site-nav .nav-link.active { 
