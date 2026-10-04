@@ -191,3 +191,33 @@ a {
     max-width: 420px; 
     margin: 0; 
 }
+
+.tradition-row { 
+    display: flex; 
+    gap: 2rem; 
+    padding: 1.75rem 0; 
+    border-bottom: 1px solid var(--line); 
+}
+.tradition-num { 
+    flex: 0 0 90px; 
+    font-family: "Cormorant Garamond", serif; 
+    font-size: 1.6rem; 
+    color: #4a4338; 
+}
+.tradition-main { 
+    flex: 1; 
+}
+.tradition-main h2 { 
+    font-size: 1.9rem; 
+    margin-bottom: 0.25rem; 
+}
+.tradition-region { 
+    font-size: 0.65rem; 
+    letter-spacing: 0.2em; 
+    text-transform: uppercase; 
+    color: var(--gold); 
+}
+.tradition-main p { 
+    color: var(--muted); 
+    margin: 0.5rem 0 0; 
+}
