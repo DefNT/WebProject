@@ -28,3 +28,19 @@ a {
 .muted { 
     color: var(--muted); 
 }
+.eyebrow { 
+    display: flex; 
+    align-items: center; 
+    gap: 0.75rem; 
+    font-size: 0.7rem; 
+    letter-spacing: 0.2em;
+    text-transform: uppercase; 
+    color: var(--gold); 
+    margin-bottom: 1rem; 
+}
+.eyebrow::before { 
+    content: "";
+    width: 28px; 
+    height: 1px; 
+    background-color: var(--gold); 
+}
