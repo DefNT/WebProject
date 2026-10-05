@@ -221,3 +221,25 @@ a {
     color: var(--muted); 
     margin: 0.5rem 0 0; 
 }
+.table-wrap {
+    overflow-x: auto;
+}
+
+#tradition-table {
+    --bs-table-bg: transparent;
+    --bs-table-color: var(--text);
+    --bs-table-border-color: var(--line);
+}
+
+#tradition-table caption {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+#tradition-table thead th {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+}
