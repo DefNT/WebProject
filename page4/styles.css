@@ -270,3 +270,14 @@ a {
   font-size: 0.9rem;
   color: var(--muted);
 }
+.explore-grid .info-cell {
+  transition: background-color 0.3s ease;
+}
+
+.explore-grid .info-cell:hover {
+  background-color: var(--panel);
+}
+
+.explore-grid .info-cell:hover h3 {
+  color: var(--gold);
+}
