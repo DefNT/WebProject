@@ -128,3 +128,44 @@ a {
     border-color: var(--gold);
     color: var(--gold);
 }
+.site-footer {
+    background-color: #0d0c0b;
+    border-top: 1px solid var(--line);
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-brand {
+    font-family: "Cormorant Garamond", serif;
+    letter-spacing: 0.2em;
+    font-size: 1.1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.footer-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+.footer-copy {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #4f4b44;
+}
