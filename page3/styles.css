@@ -243,3 +243,43 @@ a {
     color: var(--gold);
     font-weight: 600;
 }
+#tradition-table td,
+#tradition-table th {
+    padding: 0.9rem 1rem;
+}
+
+@media (max-width: 992px) {
+    .tradition-num {
+        flex-basis: 60px;
+    }
+
+    .site-nav .nav-link.active {
+        color: var(--gold);
+    }
+
+    .site-nav .nav-link.active::after {
+        display: none;
+    }
+
+    .footer-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .tradition-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #tradition-table {
+        font-size: 0.85rem;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
