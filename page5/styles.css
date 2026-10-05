@@ -230,3 +230,59 @@ a {
 .contact-detail div { 
     margin-bottom: 1rem; 
 }
+.form-panel { 
+    background-color: var(--panel);
+    border: 1px solid var(--line);
+    padding: 1.75rem; 
+}
+.form-panel label { 
+    font-size: 0.6rem; 
+    letter-spacing: 0.2em; 
+    text-transform: uppercase; 
+    color: var(--muted); 
+}
+.form-panel .form-control, .form-panel .form-select { 
+    background-color: transparent; 
+    color: var(--text); 
+    border: none; 
+    border-bottom: 1px solid var(--line); 
+    border-radius: 0; 
+    padding-left: 0; 
+    box-shadow: none; 
+}
+.form-panel .form-control:focus, .form-panel .form-select:focus { 
+    border-bottom-color: var(--gold); 
+}
+.form-panel option { 
+    background-color: var(--panel); 
+}
+
+@media (max-width: 992px) {
+  .contact-wrap { padding: 3rem 0 0; }
+}
+@media (max-width: 576px) {
+  .form-panel { padding: 1.25rem 1rem; }
+}
+
+@media (max-width: 992px) {
+  .site-nav .nav-link.active { 
+    color: var(--gold); 
+}
+  .site-nav .nav-link.active::after { 
+    display: none; 
+}
+  .footer-inner { 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    text-align: center; 
+}
+}
+@media (max-width: 576px) {
+  .footer-links { 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+  .entry-card img { 
+    height: 200px; 
+}
+}
