@@ -4,8 +4,8 @@
 
 Mythos is a multi-page, responsive website: an independent digital field guide to mythical creatures from different cultures. Each entry treats a creature as a window into the people who kept its story alive.
 
-**Live site:** [add your GitHub Pages / Netlify link here]
-**Repository:** [add your GitHub repository link here]
+**Live site:** 
+**Repository:** https://github.com/DefNT/WebProject
 **Group:** SE-2530
 
 ## Team
