@@ -283,3 +283,61 @@ a {
         justify-content: center;
     }
 }
+.contact-wrap {
+    padding: 4.5rem 0 1rem;
+}
+
+.contact-wrap p {
+    color: #b9b2a5;
+}
+
+.contact-detail {
+    border-top: 1px solid var(--line);
+    padding-top: 1.25rem;
+    margin-top: 2rem;
+}
+
+.contact-detail small {
+    display: block;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.contact-detail div {
+    margin-bottom: 1rem;
+}
+
+.form-panel {
+    background-color: var(--panel);
+    border: 1px solid var(--line);
+    padding: 1.75rem;
+}
+
+.form-panel label {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.form-panel .form-control,
+.form-panel .form-select {
+    background-color: transparent;
+    color: var(--text);
+    border: none;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    padding-left: 0;
+    box-shadow: none;
+}
+
+.form-panel .form-control:focus,
+.form-panel .form-select:focus {
+    border-bottom-color: var(--gold);
+}
+
+.form-panel option {
+    background-color: var(--panel);
+}
