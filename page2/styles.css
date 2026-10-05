@@ -169,3 +169,22 @@ a {
     text-transform: uppercase;
     color: #4f4b44;
 }
+@media (max-width: 992px) {
+    .bestiary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bestiary-grid > :nth-child(3n + 2) {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-head {
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .bestiary-grid {
+        grid-template-columns: 1fr;
+    }
+}
