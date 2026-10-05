@@ -239,3 +239,21 @@ a {
     letter-spacing: 0.15em; 
     text-transform: uppercase; 
 }
+.entry-body { 
+    padding: 1.25rem; 
+}
+.entry-origin { 
+    font-size: 0.62rem; 
+    letter-spacing: 0.2em; 
+    text-transform: uppercase;
+    color: var(--gold); 
+}
+.entry-body h3 { 
+    font-size: 1.6rem; 
+    margin: 0.25rem 0 0.5rem; 
+}
+.entry-body p { 
+    color: var(--muted); 
+    font-size: 0.9rem; 
+    margin: 0; 
+}
