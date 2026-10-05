@@ -341,3 +341,33 @@ a {
 .form-panel option {
     background-color: var(--panel);
 }
+@media (max-width: 992px) {
+    .contact-wrap {
+        padding: 3rem 0 0;
+    }
+
+    .site-nav .nav-link.active {
+        color: var(--gold);
+    }
+
+    .site-nav .nav-link.active::after {
+        display: none;
+    }
+
+    .footer-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-panel {
+        padding: 1.25rem 1rem;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
