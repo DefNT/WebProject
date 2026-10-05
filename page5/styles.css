@@ -107,3 +107,72 @@ a {
     height: 1px; 
     background-color: var(--gold); 
 }
+.btn-gold, .btn-ghost { 
+    font-size: 0.72rem; 
+    letter-spacing: 0.15em; 
+    text-transform: uppercase; 
+    border-radius: 0; 
+    padding: 0.8rem 1.4rem; 
+}
+.btn-gold { 
+    background-color: var(--gold); 
+    color: #1a1408; 
+    border: 1px solid var(--gold); 
+    font-weight: 600; 
+}
+.btn-gold:hover { 
+    background-color: #d8b672; 
+    color: #1a1408; 
+}
+.btn-ghost { 
+    background: transparent; 
+    color: var(--text); 
+    border: 1px solid var(--line); 
+}
+.btn-ghost:hover { 
+    border-color: var(--gold); 
+    color: var(--gold); 
+}
+.entry-card { 
+    position: relative; 
+    background-color: var(--panel); 
+    border: 1px solid var(--line); 
+    overflow: hidden; 
+    height: 100%; 
+}
+.entry-card img { 
+    display: block; 
+    width: 100%; 
+    height: 240px; 
+    object-fit: cover; 
+}
+.entry-tag { 
+    position: absolute; 
+    top: 12px; 
+    left: 12px; 
+    background-color: rgba(0, 0, 0, 0.65); 
+    border: 1px solid var(--line); 
+    border-radius: 20px; 
+    padding: 2px 10px; 
+    font-size: 0.62rem; 
+    letter-spacing: 0.15em; 
+    text-transform: uppercase;
+}
+.entry-body { 
+    padding: 1.25rem; 
+}
+.entry-origin { 
+    font-size: 0.62rem; 
+    letter-spacing: 0.2em; 
+    text-transform: uppercase; 
+    color: var(--gold); 
+}
+.entry-body h3 {
+    font-size: 1.6rem; 
+    margin: 0.25rem 0 0.5rem; 
+    }
+.entry-body p { 
+    color: var(--muted); 
+    font-size: 0.9rem; 
+    margin: 0; 
+}
