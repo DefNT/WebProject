@@ -369,3 +369,63 @@ a {
   text-transform: uppercase;
   color: var(--muted);
 }
+@media (max-width: 992px) {
+  .about-hero {
+    padding: 3rem 0 2rem;
+  }
+
+  .about-stat {
+    left: 10px;
+    bottom: -20px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-cell {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .info-cell:last-child {
+    border-bottom: none;
+  }
+
+  .purpose {
+    padding-top: 3rem;
+  }
+
+  .site-nav .nav-link.active {
+    color: var(--gold);
+  }
+
+  .site-nav .nav-link.active::after {
+    display: none;
+  }
+
+  .footer-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-figure img {
+    height: 300px;
+  }
+
+  .purpose-quote {
+    padding: 2.5rem 1.25rem 1.5rem;
+  }
+
+  .purpose-quote blockquote p {
+    font-size: 1.35rem;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
