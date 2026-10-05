@@ -239,3 +239,34 @@ a {
   line-height: 1;
   color: var(--gold);
 }
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--line);
+}
+
+.info-cell {
+  padding: 1.5rem;
+  border-right: 1px solid var(--line);
+}
+
+.info-cell:last-child {
+  border-right: none;
+}
+
+.info-cell .num {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  color: var(--gold);
+}
+
+.info-cell h3 {
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+.info-cell p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
