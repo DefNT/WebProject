@@ -281,3 +281,91 @@ a {
 .explore-grid .info-cell:hover h3 {
   color: var(--gold);
 }
+.purpose {
+  padding-top: 5rem;
+}
+
+.purpose-title {
+  margin-bottom: 1.25rem;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+}
+
+.purpose-title em {
+  color: var(--gold);
+}
+
+.purpose-lead {
+  font-size: 1.05rem;
+  color: #d6cfc1;
+}
+
+.purpose-text {
+  color: var(--muted);
+}
+
+.purpose-quote {
+  position: relative;
+  margin: 0;
+  padding: 3rem 2rem 2rem;
+  background-color: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.purpose-quote::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 48px;
+  height: 48px;
+  border-top: 1px solid var(--gold);
+  border-left: 1px solid var(--gold);
+}
+
+.purpose-quote::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  width: 48px;
+  height: 48px;
+  border-right: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+}
+
+.purpose-ornament {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--gold);
+}
+
+.purpose-ornament::before,
+.purpose-ornament::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--line);
+}
+
+.purpose-quote blockquote {
+  margin: 0;
+}
+
+.purpose-quote blockquote p {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.purpose-quote figcaption {
+  margin-top: 1.25rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
