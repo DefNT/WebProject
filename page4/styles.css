@@ -193,3 +193,49 @@ a {
   text-transform: uppercase;
   color: #4f4b44;
 }
+.about-hero {
+  padding: 5rem 0 3rem;
+}
+
+.about-hero .lead {
+  font-size: 1.05rem;
+  color: #d6cfc1;
+}
+
+.about-hero p {
+  color: var(--muted);
+}
+
+.about-figure {
+  position: relative;
+  margin: 0;
+}
+
+.about-figure img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.about-stat {
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  padding: 0.8rem 1.1rem;
+  background-color: var(--panel);
+  border: 1px solid var(--line);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.about-stat span {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  letter-spacing: 0;
+  line-height: 1;
+  color: var(--gold);
+}
