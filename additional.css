@@ -1,0 +1,20 @@
+.entry-card { transition: transform 0.25s ease, border-color 0.25s ease; }
+.entry-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+
+.fav-btn {
+  position: absolute; top: 10px; right: 10px; width: 36px; height: 36px;
+  border-radius: 50%; background: rgba(0, 0, 0, 0.65); border: 1px solid var(--line);
+  color: var(--text); font-size: 1.1rem; line-height: 1; cursor: pointer; transition: all 0.2s ease;
+}
+.fav-btn:hover, .fav-btn:focus-visible { border-color: var(--gold); color: var(--gold); }
+.fav-btn.active { color: var(--gold); border-color: var(--gold); background: rgba(201, 164, 92, 0.18); }
+
+.details-btn {
+  margin-top: 0.9rem; padding: 0; background: none; border: 0; color: var(--gold);
+  font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase;
+}
+.details-btn:hover { text-decoration: underline; }
+
+.tradition-row { cursor: pointer; }
+.tradition-row:hover .tradition-num, .tradition-row.open .tradition-num { color: var(--gold); }
+.tradition-details { display: none; }
