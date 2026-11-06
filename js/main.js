@@ -34,4 +34,11 @@ if (featuredGrid) {
   });
   showCards(featuredGrid, featured, false, []);
   document.getElementById("creature-count").textContent = creatures.length;
+}
+const rows = document.querySelectorAll(".tradition-row");
+for (let i = 0; i < rows.length; i++) {
+  const details = document.createElement("p");
+  details.className = "tradition-details";
+  details.textContent = traditions[i].details;
+  rows[i].querySelector(".tradition-main").appendChild(details);
 }}
