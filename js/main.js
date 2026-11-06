@@ -34,4 +34,4 @@ if (featuredGrid) {
   });
   showCards(featuredGrid, featured, false, []);
   document.getElementById("creature-count").textContent = creatures.length;
-}
+}}
