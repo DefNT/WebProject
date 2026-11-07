@@ -2,7 +2,12 @@ function createCard(creature, showButtons, isFavorite) {
   let buttons = "";
   let readMore = "";
   if (showButtons) {
-
+    const heart = isFavorite ? "&#9829;" : "&#9825;";
+    const activeClass = isFavorite ? "active" : "";
+    buttons = `<button type="button" class="fav-btn ${activeClass}" 
+    data-id="${creature.id}" aria-label="Add ${creature.name} to favorites or remove it">${heart}</button>`;
+    readMore = `<button type="button" class="details-btn" data-id="${creature.id}">Read more</button>`;
+  }
 
   const card = document.createElement("article");
   card.className = "entry-card";
@@ -35,10 +40,3 @@ if (featuredGrid) {
   showCards(featuredGrid, featured, false, []);
   document.getElementById("creature-count").textContent = creatures.length;
 }
-const rows = document.querySelectorAll(".tradition-row");
-for (let i = 0; i < rows.length; i++) {
-  const details = document.createElement("p");
-  details.className = "tradition-details";
-  details.textContent = traditions[i].details;
-  rows[i].querySelector(".tradition-main").appendChild(details);
-}}
