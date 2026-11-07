@@ -210,7 +210,6 @@ a {
   color: #6b5a47;
 }
 
-/* ===== Hero: картина с облаками, текст в центральном облаке ===== */
 .hero {
   position: relative;
   display: flex;
@@ -230,7 +229,6 @@ a {
   opacity: 1;
 }
 
-/* плавный переход картины в тёмный фон страницы */
 .hero::after {
   content: "";
   position: absolute;
@@ -252,7 +250,6 @@ a {
   padding-bottom: 8vh;
 }
 
-/* светлая подложка под текстом, чтобы читалось на любом экране */
 .hero-content::before {
   content: "";
   position: absolute;
@@ -262,7 +259,6 @@ a {
   pointer-events: none;
 }
 
-/* тёмный текст на светлом облаке */
 .hero-content h1 {
   color: #2a170d;
   text-shadow: 0 0 22px rgba(255, 240, 215, 0.6);
@@ -285,7 +281,6 @@ a {
   background-color: #6b4318;
 }
 
-/* кнопки: тёмные на светлом облаке */
 .hero-content .btn-gold {
   background-color: #3a2214;
   border-color: #3a2214;
@@ -325,7 +320,6 @@ a {
   letter-spacing: 0;
 }
 
-/* если в HTML остались <img class="cloud ...">, они больше не нужны */
 .cloud {
   display: none;
 }
