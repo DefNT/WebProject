@@ -11,4 +11,12 @@ $(function () {
     $(this).toggleClass("open");
     $(this).next(".faq-answer").slideToggle(250);
   });
+
+  $("#contact-form").find('input[type="text"], input[type="email"], textarea, select').on("focus blur", function (event) {
+    $(this).closest(".col-12").find("label").toggleClass("label-active", event.type === "focus");
+  });
+
+  $("#form-success .btn-close").on("click", function () {
+    $(this).parent().fadeOut(300);
+  });
 });
