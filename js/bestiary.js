@@ -2,6 +2,10 @@ const grid = document.getElementById("bestiary-grid");
 const searchInput = document.getElementById("search-input");
 const typeSelect = document.getElementById("type-filter");
 const traditionSelect = document.getElementById("tradition-filter");
+const favoritesButton = document.getElementById("favorites-toggle");
+
+let favorites = [];
+let onlyFavorites = false;
 
 traditions.forEach(function (tradition) {
   const option = document.createElement("option");
@@ -21,3 +25,18 @@ function filterCreatures(list, searchText, type, tradition, onlyFavs, favoriteId
     return matchesSearch && matchesType && matchesTradition && matchesFavorite;
   });
 }
+
+function toggleFavorite(id) {
+  const index = favorites.indexOf(id);
+  if (index === -1) {
+    favorites.push(id);
+  } else {
+    favorites.splice(index, 1);
+  }
+}
+
+favoritesButton.addEventListener("click", function () {
+  onlyFavorites = !onlyFavorites;
+  favoritesButton.classList.toggle("active");
+  updatePage();
+});
